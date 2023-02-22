@@ -1,4 +1,5 @@
 import 'package:flutter_application_1/models/book.dart';
+import 'package:flutter_application_1/screens/home/pages/book_details.dart';
 import 'package:flutter_application_1/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -15,14 +16,19 @@ class TrendingBook extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          height: 160,
-          width: 110,
-          margin: EdgeInsets.only(top: 12, right: 20),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            image: DecorationImage(
-              image: AssetImage(info.imageUrl),
+        InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, BookDetail.nameRoute);
+          },
+          child: Container(
+            height: 160,
+            width: 110,
+            margin: EdgeInsets.only(top: 12, right: 20),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                image: AssetImage(info.imageUrl),
+              ),
             ),
           ),
         ),

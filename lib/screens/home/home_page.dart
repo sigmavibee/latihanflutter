@@ -5,6 +5,7 @@ import 'package:flutter_application_1/themes.dart';
 import 'package:flutter_application_1/screens/home/components/recent_book.dart';
 
 class HomePage extends StatefulWidget {
+  static const nameRoute = ' /homepage';
   const HomePage({super.key});
 
   @override

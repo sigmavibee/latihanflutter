@@ -6,6 +6,7 @@ import 'package:flutter_application_1/screens/user/user_page.dart';
 import 'package:flutter_application_1/themes.dart';
 
 class BottomNavBar extends StatefulWidget {
+  static const nameRoute = '/';
   const BottomNavBar({super.key});
 
   @override
